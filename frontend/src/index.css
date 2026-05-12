@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --bg-primary: 5 8 18;
+    --bg-secondary: 10 16 32;
+    --text-primary: 244 247 255;
+    --card-bg: 18 28 49;
+    --border-color: 255 255 255;
+    --background-rgb: 5 8 18;
+    --background-soft-rgb: 10 16 32;
+    --background-elevated-rgb: 14 23 42;
+    --background-deep-rgb: 3 6 16;
+    --foreground-rgb: 244 247 255;
+    --muted-rgb: 190 200 222;
+    --subtle-rgb: 138 153 182;
+    --border-rgb: 255 255 255;
+    --card-rgb: 255 255 255;
+    --card-strong-rgb: 18 28 47;
+    --overlay-rgb: 2 6 23;
+    --accent-rgb: 105 230 255;
+    --gold-rgb: 246 196 105;
+    --app-background:
+      radial-gradient(circle at top left, rgba(246, 196, 105, 0.12), transparent 24%),
+      radial-gradient(circle at right top, rgba(105, 230, 255, 0.08), transparent 26%),
+      linear-gradient(180deg, #05070d 0%, #0a1020 40%, #060913 100%);
+    --shadow-glow: 0 24px 80px rgba(19, 32, 61, 0.42);
+    --shadow-card: 0 26px 70px rgba(4, 9, 20, 0.45);
+    --glass-surface: linear-gradient(180deg, rgba(18, 28, 49, 0.78), rgba(8, 13, 25, 0.74));
+    --glass-border-opacity: 0.1;
+  }
+
+  :root[data-theme='light'] {
+    color-scheme: light;
+    --bg-primary: 241 245 251;
+    --bg-secondary: 232 238 247;
+    --text-primary: 17 24 39;
+    --card-bg: 255 255 255;
+    --border-color: 146 163 190;
+    --background-rgb: 241 245 251;
+    --background-soft-rgb: 232 238 247;
+    --background-elevated-rgb: 255 255 255;
+    --background-deep-rgb: 219 227 240;
+    --foreground-rgb: 17 24 39;
+    --muted-rgb: 78 94 121;
+    --subtle-rgb: 111 127 151;
+    --border-rgb: 146 163 190;
+    --card-rgb: 255 255 255;
+    --card-strong-rgb: 247 250 255;
+    --overlay-rgb: 15 23 42;
+    --accent-rgb: 73 150 245;
+    --gold-rgb: 216 171 75;
+    --app-background:
+      radial-gradient(circle at top left, rgba(216, 171, 75, 0.12), transparent 24%),
+      radial-gradient(circle at right top, rgba(73, 150, 245, 0.12), transparent 30%),
+      linear-gradient(180deg, #f8fbff 0%, #eff4fb 42%, #e8eef6 100%);
+    --shadow-glow: 0 24px 64px rgba(109, 138, 183, 0.22);
+    --shadow-card: 0 20px 55px rgba(158, 173, 198, 0.28);
+    --glass-surface: linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(244, 248, 255, 0.78));
+    --glass-border-opacity: 0.18;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background font-body text-foreground antialiased;
+    background-image: var(--app-background);
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  * {
+    @apply border-border/15;
+  }
+
+  body,
+  body * {
+    transition-duration: 500ms;
+    transition-property: background-color, border-color, color, fill, stroke, box-shadow;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  img,
+  video,
+  picture,
+  canvas,
+  svg {
+    transition-property: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    body,
+    body * {
+      transition-duration: 0ms;
+    }
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply border backdrop-blur-2xl shadow-card;
+    background: var(--glass-surface);
+    border-color: rgba(var(--border-rgb), var(--glass-border-opacity));
+  }
+
+  .theme-surface {
+    background-color: rgb(var(--background-rgb));
+  }
+
+  .theme-card {
+    background-color: rgba(var(--card-bg), 0.82);
+  }
+
+  .theme-border {
+    border-color: rgba(var(--border-color), 0.18);
+  }
+
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-foreground via-muted to-neon bg-clip-text text-transparent;
+  }
+
+  .glass-button {
+    @apply rounded-full border border-border/50 bg-card/70 text-foreground shadow-card backdrop-blur-xl transition-all duration-500 hover:scale-[1.02] hover:shadow-glow;
+  }
+
+  .select-theme {
+    @apply w-full rounded-2xl border border-border/50 bg-background-elevated/70 px-4 py-3 text-sm text-foreground shadow-sm outline-none focus:border-neon/50 focus:ring-2 focus:ring-neon/20;
+  }
+
+  .pill-button {
+    @apply rounded-full border border-border/40 bg-card/55 px-4 py-2 text-sm text-muted hover:border-border/70 hover:bg-card/80 hover:text-foreground;
+  }
+
+  .pill-button-active {
+    @apply border-neon/30 bg-neon/10 text-foreground shadow-[0_0_20px_rgba(var(--accent-rgb),0.18)];
+  }
+
+  .movie-rail {
+    scrollbar-width: none;
+  }
+
+  .movie-rail::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(var(--accent-rgb), 0.35), rgba(var(--gold-rgb), 0.35));
+  border-radius: 999px;
+}

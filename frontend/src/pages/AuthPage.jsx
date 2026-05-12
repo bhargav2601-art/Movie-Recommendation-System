@@ -1,0 +1,6 @@
+import { Navigate } from 'react-router-dom'
+
+
+export function AuthPage() {
+  return <Navigate to="/login" replace />
+}

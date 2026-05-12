@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="#050816" />
+  <rect x="72" y="72" width="1056" height="576" rx="38" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" />
+  <path d="M126 530 C270 442 430 410 604 410 C784 410 938 446 1080 530" fill="none" stroke="#fb7185" stroke-width="10" stroke-linecap="round" />
+  <text x="100" y="180" fill="#fb7185" font-size="40" font-family="Helvetica,Arial,sans-serif" letter-spacing="8">PREMIUM CINEMA NETWORK</text>
+  <text x="100" y="340" fill="white" font-size="120" font-weight="700" font-family="Helvetica,Arial,sans-serif">Carnival</text>
+  <text x="100" y="414" fill="rgba(255,255,255,0.74)" font-size="32" font-family="Helvetica,Arial,sans-serif">IMAX • Laser Projection • Recliners • Dolby Atmos</text>
+</svg>

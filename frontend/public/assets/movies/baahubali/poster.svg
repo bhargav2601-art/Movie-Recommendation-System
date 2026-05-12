@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c2d12" />
+      <stop offset="55%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <radialGradient id="glow" cx="35%" cy="20%" r="65%">
+      <stop offset="0%" stop-color="#fde68a" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#fde68a" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1350" fill="url(#bg)" />
+  <rect width="900" height="1350" fill="url(#glow)" />
+  <rect x="46" y="46" width="808" height="1258" rx="36" fill="none" stroke="rgba(255,255,255,0.22)" />
+  <circle cx="710" cy="240" r="182" fill="rgba(255,255,255,0.08)" />
+  <path d="M0 990 C250 860 540 860 900 1120 L900 1350 L0 1350 Z" fill="rgba(2,6,23,0.62)" />
+  <text x="84" y="140" fill="rgba(255,255,255,0.82)" font-size="30" font-family="Helvetica,Arial,sans-serif" letter-spacing="8">CINEVERSE CURATED ASSET</text>
+  <text x="84" y="1050" fill="white" font-size="96" font-weight="700" font-family="Helvetica,Arial,sans-serif">Baahubali</text>
+  <text x="84" y="1110" fill="#fde68a" font-size="34" font-family="Helvetica,Arial,sans-serif">Epic • Adventure • Drama</text>
+  <foreignObject x="84" y="1144" width="720" height="110">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: rgba(255,255,255,0.8); font-family: Helvetica,Arial,sans-serif; font-size: 30px; line-height: 1.4;">
+      Kingdom-scale fantasy event
+    </div>
+  </foreignObject>
+</svg>

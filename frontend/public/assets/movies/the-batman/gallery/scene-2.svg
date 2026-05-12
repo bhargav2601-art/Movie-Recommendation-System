@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g)" />
+  <circle cx="640" cy="340" r="190" fill="rgba(255,255,255,0.33999999999999997)" />
+  <path d="M0 620 C240 540 400 560 600 610 C840 670 1050 710 1280 540 L1280 720 L0 720 Z" fill="rgba(2,6,23,0.54)" />
+  <text x="60" y="100" fill="rgba(255,255,255,0.7)" font-size="30" font-family="Helvetica,Arial,sans-serif" letter-spacing="6">Still 02</text>
+  <text x="60" y="620" fill="white" font-size="84" font-weight="700" font-family="Helvetica,Arial,sans-serif">The Batman</text>
+</svg>

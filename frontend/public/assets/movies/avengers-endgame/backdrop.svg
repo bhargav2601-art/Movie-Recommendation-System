@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="40%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <radialGradient id="spot" cx="72%" cy="28%" r="45%">
+      <stop offset="0%" stop-color="#c7d2fe" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#c7d2fe" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)" />
+  <rect width="1920" height="1080" fill="url(#spot)" />
+  <path d="M0 760 C300 640 620 660 920 740 C1210 818 1490 930 1920 760 L1920 1080 L0 1080 Z" fill="rgba(2,6,23,0.72)" />
+  <path d="M0 890 C360 760 820 760 1220 860 C1450 916 1700 960 1920 900" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="4" />
+  <text x="112" y="140" fill="rgba(255,255,255,0.74)" font-size="34" font-family="Helvetica,Arial,sans-serif" letter-spacing="10">FEATURED CINEMATIC BANNER</text>
+  <text x="112" y="760" fill="white" font-size="122" font-weight="700" font-family="Helvetica,Arial,sans-serif">Avengers: Endgame</text>
+  <text x="116" y="828" fill="#c7d2fe" font-size="34" font-family="Helvetica,Arial,sans-serif">Action • Sci-Fi • Adventure</text>
+  <foreignObject x="112" y="858" width="760" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: rgba(255,255,255,0.82); font-family: Helvetica,Arial,sans-serif; font-size: 30px; line-height: 1.35;">
+      Triumphant closure built for communal cheering.
+    </div>
+  </foreignObject>
+</svg>
